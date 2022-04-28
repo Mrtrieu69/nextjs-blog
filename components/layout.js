@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = '[Your Name]'
+const name = 'Trieu Tam'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
@@ -68,6 +68,11 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <div className={styles.backToHome}>
+        <Link href="/users">
+          <a>← Back to users</a>
+        </Link>
+      </div>
     </div>
   )
 }

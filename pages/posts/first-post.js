@@ -1,8 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useEffect } from 'react'
 import Layout from '../../components/layout'
 
 export default function FirstPost() {
+
+  useEffect(() => {
+    console.log("ok")
+  }, [])
+
   return (
     <Layout>
       <Head>
